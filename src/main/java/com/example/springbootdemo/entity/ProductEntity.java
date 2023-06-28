@@ -1,10 +1,14 @@
-package com.example.springbootdemo.model;
+package com.example.springbootdemo.entity;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
-public class Product {
+@Entity
+@Table(name = "product_table")
+public class ProductEntity {
 
-//    @JsonIgnore
+    @Id
     private String productId;
 
     private String title;

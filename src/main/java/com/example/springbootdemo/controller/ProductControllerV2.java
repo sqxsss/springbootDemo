@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/v1/products")
-public class ProductController {
+@RequestMapping("/v2/products")
+public class ProductControllerV2 {
 
-    @Qualifier("productServiceImpl")
+    @Qualifier("productServiceImplV2")
     @Autowired
     private ProductService productService;
 
